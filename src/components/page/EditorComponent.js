@@ -16,7 +16,7 @@ const EditorComponent = () => {
 
     useEffect(() => {
         // 컴포넌트가 마운트될 때 WebrtcProvider를 생성합니다.
-        provider.current = new WebrtcProvider('test111111', doc, { signaling: ['ws://localhost:8080/testaa'] });
+        provider.current = new WebrtcProvider('test111111', doc, { signaling: ['ws://43.202.24.20:8080/testaa'] });
         // 컴포넌트가 언마운트될 때 provider를 정리합니다.
         return () => {
             provider.current.destroy();
